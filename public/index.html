@@ -109,20 +109,6 @@
       color: rgba(0, 0, 0, .8);
     }
 
-    div.left-right {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-    }
-
-    @media (max-width: 768px) {
-      div.left-right {
-        display: flex;
-        justify-content: normal;
-        flex-direction: column;
-      }
-    }
-
     h2 {
       margin-bottom: 2rem;
       color: var(--primary);
@@ -137,7 +123,7 @@
   <header id="summary">
     <div class="row">
       <div class="col-md-4">
-        <img src="me.jpeg" alt="avatar" class="avatar">
+        <img src="me.jpeg" alt="avatar" class="avatar d-none d-md-block">
       </div>
       <div class="col-md-8">
         <h1>Diana Horbatiuk</h1>
