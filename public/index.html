@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Diana Horbatiuk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <style>
+    :root {
+      --primary: rgb(74, 71, 165);
+      --secondary: rgb(188, 150, 149);
+      --mono: 'Fira Mono', Monaco, monospace;
+    }
+    body {
+      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    }
+
+    header#summary, header#summary a, section.secondary {
+      color: rgba(255, 255, 255, .95);
+      font-family: var(--mono);
+    }
+
+    @media(min-width: 1024px) {
+      header#summary {
+        margin-top: 25px;
+      }
+    }
+
+    header#summary h1 {
+      margin-top: 20px;
+      margin-bottom: 0.5rem;
+    }
+
+    header#summary ul {
+      margin-top: 1.5rem;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    header#summary ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    img.avatar {
+      border-radius: 5px;
+      box-shadow: 0 0 27px rgba(96, 96, 96, .34);
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      position: relative;
+      top: 30px;
+    }
+
+    main#main {
+      background: #FFFFFF;
+      color: rgba(0, 0, 0, .87);
+    }
+
+    article {
+      padding: 60px 0;
+    }
+
+    section.workplace {
+      padding-left: 1.5rem;
+      padding-bottom: 3rem;
+      border-left: 2px solid var(--primary);
+      position: relative;
+    }
+
+    section.workplace:last-child {
+      padding-bottom: 0.5rem;
+    }
+
+    section.workplace:before {
+      width: 13px;
+      height: 13px;
+      border: 2px solid var(--primary);
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      background-color: #FFF;
+      left: -7px;
+    }
+
+    section.workplace p.company {
+      color: var(--primary);
+      font-family: var(--mono);
+      line-height: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    section.workplace p.date {
+      color: rgba(0, 0, 0, .54);
+      font-family: var(--mono);
+      font-size: 80%;
+      line-height: 1rem;
+      margin-bottom: 0.5rem
+    }
+
+    section.workplace ul {
+      padding-left: 1.25rem;
+      color: rgba(0, 0, 0, .8);
+    }
+
+    div.left-right {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    @media (max-width: 768px) {
+      div.left-right {
+        display: flex;
+        justify-content: normal;
+        flex-direction: column;
+      }
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+    section.secondary h2 {
+      color:rgba(255, 255, 255, .95);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header id="summary">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="me.jpeg" alt="avatar" class="avatar">
+      </div>
+      <div class="col-md-8">
+        <h1>Diana Horbatiuk</h1>
+        <p>Full-stack software engineer</p>
+        <ul>
+          <li>
+            <strong>Age:</strong>
+            27
+          </li>
+          <li>
+            <strong>Current location:</strong>
+            Curitiba, Paraná, Brazil
+          </li>
+          <li>
+            <strong>Email address:</strong>
+            <a href="mailto:diana@dianahorbatiuk.com">diana@dianahorbatiuk.com</a>
+          </li>
+        </ul>
+        <h4>Links</h4>
+        <ul>
+          <li>
+            GitHub:
+            <a href="https://github.com/dhbtk" target="_blank" rel="nofollow">
+              @dhbtk
+            </a>
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://linkedin.com/in/dhbtk/" target="_blank" rel="nofollow">
+              dhbtk
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</div>
+<main id="main">
+  <div class="container">
+    <article class="work-experience">
+      <h2>Professional Experience</h2>
+
+      <section class="workplace">
+        <p class="company">Senior Software Engineer @ Tremendous</p>
+        <p class="date">Sep. 2022 - Dec. 2022</p>
+        <ul>
+          <li>
+            Worked on the frontend team, delivering improvements to the consumer-facing website.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Senior Software Engineer @ Guideline</p>
+        <p class="date">Jun. 2022 - Aug. 2022</p>
+        <ul>
+          <li>
+            Worked on the developer infrastructure team, writing infrastructural code that would then be used
+            by product-focused teams. The application was a large-scale monolith with a large number of
+            internally-built libraries.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Senior Software Engineer @ Jaya</p>
+        <p class="date">Dec. 2020 - May 2022</p>
+        <ul>
+          <li>
+            Transitioned into a more focused technical role, assisting team leads in scoping, planning and
+            estimating new projects for our team, in addition to
+            actually coding on those projects.
+          </li>
+          <li>
+            Acting as a technical point of reference to the team, assisting them when needed, and doing code
+            review of the team's pull requests as often as possible.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Tech Lead @ Jaya</p>
+        <p class="date">Dec. 2019 - Dec. 2020</p>
+        <ul>
+          <li>
+            Leading a team of five engineers during a period of tight timelines and important new projects,
+            working closely with the project manager
+            to scope out, prioritize, plan out and estimate work for the team.
+          </li>
+          <li>
+            Scouting out for tech debt in our platform and making sure it doesn't grow unless absolutely
+            necessary, as well as prioritizing tech debt fixing
+            whenever possible to keep up the platform's health.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Software Engineer @ Jaya</p>
+        <p class="date">Oct. 2018 - Dec. 2019</p>
+        <ul>
+          <li>
+            Maintenance and development of a consumer-facing e-commerce platform, belonging to an American
+            healthcare
+            company, selling health exams for end consumers.
+          </li>
+          <li>
+            Full-stack development, branding and modifying the core platform for the needs of each of our
+            clients.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Software Engineer @ Kiskadi Marketing Digital</p>
+        <p class="date">Mar. 2018 - Oct. 2018</p>
+        <ul>
+          <li>
+            Maintenance and development of the company's flagship product, a CRM, used nationwide by over
+            400 stores.
+          </li>
+          <li>
+            Research and development of integrations with other software systems and products, including
+            ERPs, billing
+            providers and SMS gateways, to add additional value and enhance usability for our product.
+          </li>
+          <li>
+            Full-stack development with Ruby on Rails, using test-driven development in order to effectively
+            maintain a large
+            pre-existing codebase while preserving quality and performance.
+          </li>
+          <li>
+            Experience with AngularJS and Vue on the frontend, and Sidekiq for task scheduling.
+          </li>
+        </ul>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Software Architect @ ∞ Eits Tecnologia da Informação</p>
+        <p class="date">Jul. 2017 - Feb. 2018</p>
+        <ul>
+          <li>
+            Development and maintenance of the company’s standard development platform, which uses
+            microservices developed
+            with Spring Boot Cloud, allowing developers to focus on building the functional aspects of
+            application
+            development.
+          </li>
+          <li>
+            Research on new technologies, aiming to bring more reliability, agility and possibilities to the
+            software that we
+            develop.
+          </li>
+          <li>
+            Participation and final decision on the technology sets used on new and current company
+            projects, taking into
+            account both technical needs and the client’s.
+          </li>
+          <li>
+            Maintenance of the company’s continuous integration platform, which runs Jenkins, automating
+            test and
+            homologation environments.
+          </li>
+        </ul>
+      </section>
+      <section class="workplace">
+        <p class="company">Full-stack Developer @ ∞ Eits Tecnologia da Informação</p>
+        <p class="date">Feb. 2016 - Jun. 2017</p>
+        <ul>
+          <li>
+            Agile software development, building both the analysis, documentation and development of
+            projects.
+          </li>
+          <li>
+            Participating in meetings with clients to acquire scope and requirements for software, project
+            size measurement
+            using function point analysis (FPA), and general software modeling using UML.
+          </li>
+          <li>
+            Standardized development process, certified MPS.BR level F.
+          </li>
+          <li>
+            Development of the following projects:
+            <ul>
+              <li>
+                <em>Singra</em>, which is in active redevelopment, replacing disparate systems with a
+                coherent
+                microservice-based architecture, for which I developed a dynamic business rules system
+                with a Ruby DSL
+                frontend.
+              </li>
+              <li>
+                <em>Formys</em>, an integrated system for the planning, enrollment control, and voting
+                of bodybuilding
+                competitions, for which I developed the synchronization mechanism between offline
+                instances and the parent
+                cloud instance.
+              </li>
+              <li>
+                <em>Sigalivre</em>, a geographic information system which I’ve supported throughout
+                2016.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="workplace">
+        <p class="company">Web Developer @ See Marketing &amp; Design</p>
+        <p class="date">Aug. 2015 - Feb. 2016</p>
+        <ul>
+          <li>
+            Building and maintenance of websites contracted to the company, using WordPress, WooCommerce,
+            Magento and an
+            internal CMS, depending on the needs of the project.
+          </li>
+          <li>
+            Implementing visual mockups using HTML, CSS and JavaScript, along with Bootstrap and jQuery.
+          </li>
+          <li>
+            Systems integration using REST APIs, integrating WooCommerce with an automated pizza order
+            printing system.
+          </li>
+          <li>
+            Development of an automated order control and printing system, integrated with WooCommerce,
+            using C# with WPF.
+          </li>
+          <li>
+            Administration of the company’s Linux server, managing the web server (nginx with PHP and
+            Unicorn), database
+            (MySQL) and email services (Dovecot and Postfix, along with Roundcube for webmail).
+          </li>
+          <li>
+            Development of an internal CMS for the developed websites, using Ruby on Rails.
+          </li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
+<section class="secondary">
+  <div class="container">
+    <article class="skills">
+      <h2>Professional Skills</h2>
+      <ul>
+        <li>Fluent in Portuguese and English.
+        <li>Strong experience working with Ruby on Rails and JavaScript.
+        <li>Web frontend experience using React/Redux and VueJS.
+        <li>Strong experience working with PostgreSQL and MySQL databases, and Redis.
+        <li>Experience using and configuring CircleCI and GitHub Actions for continuous integration.
+        <li>Experience using Git and SVN for software version control.
+        <li>Deployment management using Kubernetes, Capistrano, Docker, Docker Compose and Jenkins.
+        <li>Linux server administration: nginx, Tomcat, systemd, iptables, Dovecot, Postfix.
+      </ul>
+    </article>
+  </div>
+</section>
+</body>
+</html>
