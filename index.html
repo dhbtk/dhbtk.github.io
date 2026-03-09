@@ -8,23 +8,75 @@
   <title>Diana Niehues</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varta:wght@300..700&display=swap"
+      rel="stylesheet"
+  />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <style>
     :root {
-      --primary: rgb(74, 71, 165);
-      --secondary: rgb(188, 150, 149);
+      --soft-pink-rgb: 251 131 207;
+      --primary: rgb(82 69 150 / 1);
+      --secondary: rgb(var(--soft-pink-rgb) / 1);
+      --accent: #f8b280;
       --mono: 'Fira Mono', Monaco, monospace;
+      --font-sans: 'Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
+      --font-sans-alt: 'Varta', system-ui, sans-serif;
     }
     body {
-      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+      background-color: var(--primary);
+      background-image: linear-gradient(43deg, var(--primary) 0%, var(--secondary) 46%, var(--accent) 100%);
+      background-attachment: fixed;
+      font-family: var(--font-sans);
+      text-shadow: 1px 1px 2px rgb(0 0 0 / 0.6);
     }
 
     header#summary, header#summary a, section.secondary {
       color: rgba(255, 255, 255, .95);
-      font-family: var(--mono);
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      body {
+        line-height: 1.3;
+      }
+
+      header, article.skills {
+        color: var(--primary) !important;
+        text-shadow: none !important;
+      }
+      header > section ul > li, article.skills ul > li {
+        color: rgba(0, 0, 0, .8);
+      }
+      header > section ul > li strong, article.skills ul > li strong {
+        color: var(--primary);
+      }
+      section.workplace {
+        break-inside: avoid;
+        border-left: none !important;
+        padding-top: 1rem;
+        padding-bottom: 0 !important;
+      }
+      section.workplace:before {
+        display: none;
+      }
+      section.workplace:last-child {
+        padding-bottom: 0;
+      }
+      article.skills h2, article.work-experience h2 {
+        color: var(--primary) !important;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+      }
+      article.work-experience h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0 !important;
+      }
     }
 
     @media(min-width: 1024px) {
@@ -39,32 +91,86 @@
     }
 
     header#summary ul {
-      margin-top: 1.5rem;
+      margin-top: 0.5rem;
       list-style: none;
       padding-left: 0;
-    }
-
-    header#summary ul li {
       margin-bottom: 0.5rem;
     }
 
-    img.avatar {
-      border-radius: 5px;
-      box-shadow: 0 0 27px rgba(96, 96, 96, .34);
+    header#summary ul li {
+      margin-bottom: 0;
+    }
+
+    header#summary ul li strong, article.skills ul li strong {
+      font-family: var(--font-sans-alt);
+    }
+
+    header#summary {
+      display: flex;
+      gap: 1rem;
+    }
+
+    header > aside {
+      width: min(350px, 35%);
+    }
+
+    header > aside > img {
+      border-radius: 0.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.35);
       width: 100%;
-      height: 380px;
       object-fit: cover;
       position: relative;
-      top: 30px;
+    }
+
+    @media(max-width: 1023px) {
+      header > aside {
+        display: none;
+      }
+    }
+
+    @media(min-width: 1024px) {
+      header > aside > img {
+        top: 2rem;
+      }
+     header > section {
+       padding-top: 2rem;
+     }
+    }
+
+    header#summary section h1, header#summary section h3, header#summary section h4 {
+      font-family: var(--font-sans-alt);
+    }
+
+    header#summary section h1 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    header#summary section h3 {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+
+    header#summary section h4 {
+      font-size: 1.25rem;
+      margin-top: 1rem;
     }
 
     main#main {
       background: #FFFFFF;
       color: rgba(0, 0, 0, .87);
+      text-shadow: none;
     }
 
     article {
-      padding: 60px 0;
+      padding: 0;
+    }
+
+    @media(min-width: 1024px) {
+      article {
+        padding-top: 3rem;
+      }
     }
 
     section.workplace {
@@ -91,15 +197,17 @@
 
     section.workplace p.company {
       color: var(--primary);
-      font-family: var(--mono);
+      font-family: var(--font-sans);
       line-height: 1rem;
       margin-bottom: 0.25rem;
+      font-weight: 500;
+      font-size: 1.25rem;
     }
 
     section.workplace p.date {
       color: rgba(0, 0, 0, .54);
-      font-family: var(--mono);
-      font-size: 90%;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
       line-height: 1rem;
       padding-top: 0.25rem;
       margin-bottom: 0.5rem
@@ -108,10 +216,12 @@
     section.workplace ul {
       padding-left: 1.25rem;
       color: rgba(0, 0, 0, .8);
+      font-family: var(--font-sans);
     }
 
     section.workplace p {
       color: rgba(0, 0, 0, .8);
+      font-family: var(--font-sans);
     }
 
     h2 {
@@ -126,40 +236,38 @@
 <body>
 <div class="container">
   <header id="summary">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="me.jpeg" alt="avatar" class="avatar d-none d-md-block">
-      </div>
-      <div class="col-md-8">
-        <h1>Diana Niehues</h1>
-        <p>Software Engineer</p>
-        <ul>
-          <li>
-            <strong>Current location:</strong>
-            São Paulo, São Paulo, Brazil
-          </li>
-          <li>
-            <strong>Email address:</strong>
-            <a href="mailto:diana@dianahorbatiuk.com">diana@dianahorbatiuk.com</a>
-          </li>
-        </ul>
-        <h4>Links</h4>
-        <ul>
-          <li>
-            GitHub:
-            <a href="https://github.com/dhbtk" target="_blank" rel="nofollow">
-              @dhbtk
-            </a>
-          </li>
-          <li>
-            LinkedIn:
-            <a href="https://linkedin.com/in/dhbtk/" target="_blank" rel="nofollow">
-              dhbtk
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <aside>
+      <img src="me.jpeg" aria-hidden="true" alt="">
+    </aside>
+    <section>
+      <h1>Diana Niehues</h1>
+      <h3>Software Engineer</h3>
+      <ul>
+        <li>
+          <strong>Current location:</strong>
+          São Paulo, São Paulo, Brazil
+        </li>
+        <li>
+          <strong>Email address:</strong>
+          <a href="mailto:diana@dianahorbatiuk.com">diana@dianahorbatiuk.com</a>
+        </li>
+      </ul>
+      <h4>Links</h4>
+      <ul class="links">
+        <li>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/dhbtk" target="_blank" rel="nofollow">
+            @dhbtk
+          </a>
+        </li>
+        <li>
+          <strong>LinkedIn:</strong>
+          <a href="https://linkedin.com/in/dhbtk/" target="_blank" rel="nofollow">
+            dhbtk
+          </a>
+        </li>
+      </ul>
+    </section>
   </header>
 </div>
 <main id="main">
