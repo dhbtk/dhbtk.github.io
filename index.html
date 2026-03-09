@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Diana Horbatiuk</title>
+  <title>Diana Niehues</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
@@ -99,13 +99,18 @@
     section.workplace p.date {
       color: rgba(0, 0, 0, .54);
       font-family: var(--mono);
-      font-size: 80%;
+      font-size: 90%;
       line-height: 1rem;
+      padding-top: 0.25rem;
       margin-bottom: 0.5rem
     }
 
     section.workplace ul {
       padding-left: 1.25rem;
+      color: rgba(0, 0, 0, .8);
+    }
+
+    section.workplace p {
       color: rgba(0, 0, 0, .8);
     }
 
@@ -126,16 +131,12 @@
         <img src="me.jpeg" alt="avatar" class="avatar d-none d-md-block">
       </div>
       <div class="col-md-8">
-        <h1>Diana Horbatiuk</h1>
-        <p>Full-stack software engineer</p>
+        <h1>Diana Niehues</h1>
+        <p>Software Engineer</p>
         <ul>
           <li>
-            <strong>Age:</strong>
-            27
-          </li>
-          <li>
             <strong>Current location:</strong>
-            Curitiba, Paraná, Brazil
+            São Paulo, São Paulo, Brazil
           </li>
           <li>
             <strong>Email address:</strong>
@@ -167,199 +168,111 @@
       <h2>Professional Experience</h2>
 
       <section class="workplace">
-        <p class="company">Senior Software Engineer @ Tremendous</p>
-        <p class="date">Sep. 2022 - Dec. 2022</p>
+        <p class="company">Software Engineer II &ndash; Uber</p>
+        <p class="date">2023 &ndash; 2026</p>
         <ul>
           <li>
-            Worked on the frontend team, delivering improvements to the consumer-facing website.
+            Worked on Uber's Stored Value / Uber Cash platform, building and maintaining distributed backend services
+            responsible for wallet balances, rewards, and financial transactions across multiple internal systems.
+          </li>
+          <li>
+            Contributed across 30+ services in Uber’s financial products platform, including stored value wallet, rewards,
+            stored value money movement, and end-user marketing systems.
+          </li>
+          <li>
+            Built core backend infrastructure supporting the launch of a co-branded credit card product, implementing
+            systems for user pre-approval eligibility, transaction reversals, and negative balance handling.
+          </li>
+          <li>
+            Implemented a caching solution for stored-value balance read operations, reducing request latency by up to
+            50% and lowering database read traffic by approximately 10%.
+          </li>
+          <li>
+            Improved reliability and observability of maintained services by introducing more metrics, centralized
+            exception handling, and service refactors improving null safety and system robustness.
+          </li>
+        </ul>
+        <p>
+          <strong>Tech:</strong> Java, Go, Kafka, Thrift, Protobuf, Avro, distributed systems, microservices, Git, Bazel.
+        </p>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Senior Software Engineer &ndash; Tremendous</p>
+        <p class="date">2022</p>
+        <ul>
+          <li>
+            Developed improvements to a consumer-facing rewards platform frontend used to distribute digital payouts and incentives.
+          </li>
+          <li>
+            Implemented UI enhancements improving performance and usability of the rewards redemption flow.
+          </li>
+        </ul>
+        <p>
+          <strong>Tech:</strong> React, TypeScript, Ruby on Rails.
+        </p>
+      </section>
+
+      <section class="workplace">
+        <p class="company">Senior Software Engineer &ndash; Guideline</p>
+        <p class="date">2022</p>
+        <ul>
+          <li>
+            Built internal infrastructure tooling supporting a large monolithic retirement-platform application used by multiple product teams.
+          </li>
+          <li>
+            Developed platform abstractions used to standardize integrations and reduce duplication across engineering teams.
           </li>
         </ul>
       </section>
 
       <section class="workplace">
-        <p class="company">Senior Software Engineer @ Guideline</p>
-        <p class="date">Jun. 2022 - Aug. 2022</p>
+        <p class="company">Senior Software Engineer &ndash; Jaya</p>
+        <p class="date">2020 &ndash; 2022</p>
         <ul>
           <li>
-            Worked on the developer infrastructure team, writing infrastructural code that would then be used
-            by product-focused teams. The application was a large-scale monolith with a large number of
-            internally-built libraries.
+            Led design and implementation of new features in a large healthcare e-commerce platform.
+          </li>
+          <li>
+            Served as a technical reference for the team, performing architectural reviews and mentoring engineers.
+          </li>
+          <li>
+            Helped scope and estimate engineering work and guide technical decisions for upcoming projects.
           </li>
         </ul>
       </section>
 
       <section class="workplace">
-        <p class="company">Senior Software Engineer @ Jaya</p>
-        <p class="date">Dec. 2020 - May 2022</p>
+        <p class="company">Tech Lead &ndash; Jaya</p>
+        <p class="date">2019 &ndash; 2020</p>
         <ul>
-          <li>
-            Transitioned into a more focused technical role, assisting team leads in scoping, planning and
-            estimating new projects for our team, in addition to
-            actually coding on those projects.
-          </li>
-          <li>
-            Acting as a technical point of reference to the team, assisting them when needed, and doing code
-            review of the team's pull requests as often as possible.
-          </li>
+          <li>Led a team of five engineers delivering new platform capabilities under tight deadlines.
+          </li><li>
+          Worked closely with product management to prioritize roadmap items and plan engineering execution.
+        </li><li>
+          Initiated and prioritized technical debt remediation efforts improving platform maintainability.
+        </li>
         </ul>
       </section>
 
       <section class="workplace">
-        <p class="company">Tech Lead @ Jaya</p>
-        <p class="date">Dec. 2019 - Dec. 2020</p>
+        <p class="company">Earlier Career</p>
+        <p class="date">2015 &ndash; 2019</p>
+        <p>
+          Full-stack engineer working primarily with Ruby on Rails and JavaScript building web platforms, CRM systems, and monolithic architectures.
+        </p>
+        <p>Companies:</p>
         <ul>
-          <li>
-            Leading a team of five engineers during a period of tight timelines and important new projects,
-            working closely with the project manager
-            to scope out, prioritize, plan out and estimate work for the team.
-          </li>
-          <li>
-            Scouting out for tech debt in our platform and making sure it doesn't grow unless absolutely
-            necessary, as well as prioritizing tech debt fixing
-            whenever possible to keep up the platform's health.
-          </li>
+          <li>Jaya</li>
+
+          <li>Kiskadi Marketing Digital</li>
+
+          <li>Eits Tecnologia da Informação</li>
+
+          <li>See Marketing & Design</li>
         </ul>
       </section>
 
-      <section class="workplace">
-        <p class="company">Software Engineer @ Jaya</p>
-        <p class="date">Oct. 2018 - Dec. 2019</p>
-        <ul>
-          <li>
-            Maintenance and development of a consumer-facing e-commerce platform, belonging to an American
-            healthcare
-            company, selling health exams for end consumers.
-          </li>
-          <li>
-            Full-stack development, branding and modifying the core platform for the needs of each of our
-            clients.
-          </li>
-        </ul>
-      </section>
-
-      <section class="workplace">
-        <p class="company">Software Engineer @ Kiskadi Marketing Digital</p>
-        <p class="date">Mar. 2018 - Oct. 2018</p>
-        <ul>
-          <li>
-            Maintenance and development of the company's flagship product, a CRM, used nationwide by over
-            400 stores.
-          </li>
-          <li>
-            Research and development of integrations with other software systems and products, including
-            ERPs, billing
-            providers and SMS gateways, to add additional value and enhance usability for our product.
-          </li>
-          <li>
-            Full-stack development with Ruby on Rails, using test-driven development in order to effectively
-            maintain a large
-            pre-existing codebase while preserving quality and performance.
-          </li>
-          <li>
-            Experience with AngularJS and Vue on the frontend, and Sidekiq for task scheduling.
-          </li>
-        </ul>
-      </section>
-
-      <section class="workplace">
-        <p class="company">Software Architect @ ∞ Eits Tecnologia da Informação</p>
-        <p class="date">Jul. 2017 - Feb. 2018</p>
-        <ul>
-          <li>
-            Development and maintenance of the company’s standard development platform, which uses
-            microservices developed
-            with Spring Boot Cloud, allowing developers to focus on building the functional aspects of
-            application
-            development.
-          </li>
-          <li>
-            Research on new technologies, aiming to bring more reliability, agility and possibilities to the
-            software that we
-            develop.
-          </li>
-          <li>
-            Participation and final decision on the technology sets used on new and current company
-            projects, taking into
-            account both technical needs and the client’s.
-          </li>
-          <li>
-            Maintenance of the company’s continuous integration platform, which runs Jenkins, automating
-            test and
-            homologation environments.
-          </li>
-        </ul>
-      </section>
-      <section class="workplace">
-        <p class="company">Full-stack Developer @ ∞ Eits Tecnologia da Informação</p>
-        <p class="date">Feb. 2016 - Jun. 2017</p>
-        <ul>
-          <li>
-            Agile software development, building both the analysis, documentation and development of
-            projects.
-          </li>
-          <li>
-            Participating in meetings with clients to acquire scope and requirements for software, project
-            size measurement
-            using function point analysis (FPA), and general software modeling using UML.
-          </li>
-          <li>
-            Standardized development process, certified MPS.BR level F.
-          </li>
-          <li>
-            Development of the following projects:
-            <ul>
-              <li>
-                <em>Singra</em>, which is in active redevelopment, replacing disparate systems with a
-                coherent
-                microservice-based architecture, for which I developed a dynamic business rules system
-                with a Ruby DSL
-                frontend.
-              </li>
-              <li>
-                <em>Formys</em>, an integrated system for the planning, enrollment control, and voting
-                of bodybuilding
-                competitions, for which I developed the synchronization mechanism between offline
-                instances and the parent
-                cloud instance.
-              </li>
-              <li>
-                <em>Sigalivre</em>, a geographic information system which I’ve supported throughout
-                2016.
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="workplace">
-        <p class="company">Web Developer @ See Marketing &amp; Design</p>
-        <p class="date">Aug. 2015 - Feb. 2016</p>
-        <ul>
-          <li>
-            Building and maintenance of websites contracted to the company, using WordPress, WooCommerce,
-            Magento and an
-            internal CMS, depending on the needs of the project.
-          </li>
-          <li>
-            Implementing visual mockups using HTML, CSS and JavaScript, along with Bootstrap and jQuery.
-          </li>
-          <li>
-            Systems integration using REST APIs, integrating WooCommerce with an automated pizza order
-            printing system.
-          </li>
-          <li>
-            Development of an automated order control and printing system, integrated with WooCommerce,
-            using C# with WPF.
-          </li>
-          <li>
-            Administration of the company’s Linux server, managing the web server (nginx with PHP and
-            Unicorn), database
-            (MySQL) and email services (Dovecot and Postfix, along with Roundcube for webmail).
-          </li>
-          <li>
-            Development of an internal CMS for the developed websites, using Ruby on Rails.
-          </li>
-        </ul>
-      </section>
     </article>
   </div>
 </main>
@@ -368,14 +281,30 @@
     <article class="skills">
       <h2>Professional Skills</h2>
       <ul>
-        <li>Fluent in Portuguese and English.
-        <li>Strong experience working with Ruby on Rails and JavaScript.
-        <li>Web frontend experience using React/Redux and VueJS.
-        <li>Strong experience working with PostgreSQL and MySQL databases, and Redis.
-        <li>Experience using and configuring CircleCI and GitHub Actions for continuous integration.
-        <li>Experience using Git and SVN for software version control.
-        <li>Deployment management using Kubernetes, Capistrano, Docker, Docker Compose and Jenkins.
-        <li>Linux server administration: nginx, Tomcat, systemd, iptables, Dovecot, Postfix.
+        <li>
+          <strong>Programming:</strong>
+          Java, Go, Ruby, Rust, JavaScript, TypeScript
+        </li>
+        <li>
+          <strong>Backend / Distributed Systems:</strong>
+          Microservices, event-driven systems, Kafka, API design, service integrations
+        </li>
+        <li>
+          <strong>Infrastructure:</strong>
+          Docker, Kubernetes, CI/CD, distributed architecture
+        </li>
+        <li>
+          <strong>Databases:</strong>
+          PostgreSQL, MySQL, Redis
+        </li>
+        <li>
+          <strong>Frontend:</strong>
+          React, Vue.js
+        </li>
+        <li>
+          <strong>Languages:</strong>
+          Portuguese (native), English (fluent)
+        </li>
       </ul>
     </article>
   </div>
